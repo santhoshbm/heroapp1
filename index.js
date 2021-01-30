@@ -31,18 +31,19 @@ if(req.url === '/about'){
 }
 
 
-if(req.url === '/api/users'){
+
+    
+    */
+
+   if(req.url === '/api/users'){
     const users= [
         {name: 'san m', age: 34},
-        {name: 'bob b', age: 23},
+        {name: 'Pooja', age: 23},
     ];
     res.writeHead(200, {'content-type': 'text/html'});
     res.end(JSON.stringify(users)); 
     
-    
-    */
-
-
+  }
 let filePath = path.join(__dirname, 'public', req.url === '/'? 'index.html' : req.url);
 
 console.log(filePath);
